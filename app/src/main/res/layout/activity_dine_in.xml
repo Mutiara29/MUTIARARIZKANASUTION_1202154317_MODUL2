@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mutiararizkanst.mutiararizkanasution_1202154317_modul2.DineIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Pemesan"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:hint="Silahkan Isi Nama Kamu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/nomormeja"
+                android:layout_toLeftOf="@+id/nomormeja"
+                android:layout_toStartOf="@+id/nomormeja"
+                android:text="Nomor Meja : "
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/nomormeja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText6"
+                android:layout_alignRight="@+id/editText6"
+                android:layout_below="@+id/editText6"
+                android:layout_marginEnd="98dp"
+                android:layout_marginRight="98dp"
+                android:layout_marginTop="44dp"></Spinner>
+
+            <Button
+                android:id="@+id/pilihpesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomormeja"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="39dp"
+                android:onClick="pilihpesanan"
+                android:text="Pilih Pesanan" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
